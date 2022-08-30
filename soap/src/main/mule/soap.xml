@@ -16,5 +16,6 @@ http://www.mulesoft.org/schema/mule/wsc http://www.mulesoft.org/schema/mule/wsc/
 	<flow name="soapFlow" doc:id="a90dd839-95d5-4eda-b107-a31470d5a891" >
 		<http:listener doc:name="Listener" doc:id="26fb7871-3f85-4643-bf55-6cbe74028b10" config-ref="HTTP_Listener_config" path="/soap"/>
 		<wsc:consume operation="Add" doc:name="Consume" doc:id="46930e9f-e7b4-4264-aebd-56768461e0a5" config-ref="Web_Service_Consumer_Config"/>
+		<logger level="INFO" doc:name="Logger" doc:id="e3d29598-b4f4-4f47-b271-a2ca790a63b2" message="test"/>
 	</flow>
 </mule>
